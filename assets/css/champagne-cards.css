@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(53.1deg, #EAEDF6 0%, #F8F9FD 81.36%);
+}
+
+.back-to-menu {
+  align-self: flex-start;
+  margin-top: 50px;
+  transform: translateX(-220px);
+  color: rgba(24, 36, 86, 0.7);
+  font-size: 14px;
+}
+
+.button-text {
+  transform: translateX(50px);
+  color: rgba(24, 36, 86, 0.7);
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.outer-card {
+  height: 550px;
+  width: 450px;
+}
+
+.inner-card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  background-color: #FFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-card.flip {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-front, .card-back {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 23px;
+}
+
+.front-content, .back-content {
+  height: 239px;
+  width: 359px;
+  font-size: 40px;
+  color: #E9612C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+.left, .right {
+  margin: 40px;
+}
+
+.category-icon-container  {
+  background-color: #E9612C;
+  width: 450px;
+  height: 127px;
+  transform: translateY(25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 80px;
+  height: 60px;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  color: #182456;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  transform: translateX(-466px);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none; 
+  color: #182456;
+}
