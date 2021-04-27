@@ -1,3 +1,5 @@
+@import 'config';
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(53.1deg, #EAEDF6 0%, #F8F9FD 81.36%);
+  background: $primary-bg;
 }
 
 .greeting-text-container {
@@ -25,7 +27,7 @@ h1 {
   font-size: 36px;
   font-weight: 400;
   line-height: 42.19px;
-  color: #182456;
+  color: $primary-font-color;
   margin-left: 90px;
 }
 
@@ -49,7 +51,7 @@ h1 {
   left: 87px;
   top: 371px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: $card-bg;
   box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
   cursor: pointer;
 }
@@ -66,52 +68,52 @@ h4 {
 
 a {
   text-decoration: none;
+  &:visited {
+    text-decoration: none; 
+    color: $primary-font-color;
+  }
 }
 
-a:visited {
-  text-decoration: none; 
-  color: #182456;
+
+
+.alsace:hover {
+  background-color: $alsace-light;
 }
 
 .bordeaux:hover {
-  background-color: #e26d981e;
+  background-color: $bordeaux-light;
 }
 
 .champagne:hover {
-  background-color: #E9612C1e;
+  background-color: $champagne-light;
 }
 
 .italy:hover {
-  background-color: #3164D11e;
-}
-
-.alsace:hover {
-  background-color: #7EEEC51e;
+  background-color: $italy-light;
 }
 
 .loire:hover {
-  background-color: #EABB641e;
-}
-
-.bordeaux-title {
-  color: #E26D97;
-}
-
-.champagne-title {
-  color: #E9612C;
-}
-
-.italy-title {
-  color: #3164D1;
+  background-color: $loire-light;
 }
 
 .alsace-title {
-  color: #7EEEC5;
-  ;
+  color: $alsace-main;
+}
+
+.bordeaux-title {
+  color: $bordeaux-main;
+}
+
+.champagne-title {
+  color: $champagne-main;
+}
+
+.italy-title {
+  color: $italy-main;
 }
 
 .loire-title {
-  color: #EABB64;
+  color: $loire-main;
 }
 
 .card-amount-display {
@@ -123,16 +125,3 @@ a:visited {
 .category-selection-btn {
   align-self: center;
 }
-
-footer {
-  font-size: 10px;
-  text-align: center;
-  color: #182456;
-  height: 50px;
-  position: fixed;
-  transform: rotate(90deg);
-  left: -101px;
-  top: 160px;
-}
-
-
